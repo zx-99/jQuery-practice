@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开灯关灯</title>
+    <script src="../js/jquery.js"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+    <script>
+        $(function () {  
+            var $btn=$('button');
+            $btn.eq(0).click(function () {
+                $('body').css('backgroundColor', 'white')
+            })
+
+            $btn.eq(1).click(function () {
+                $('body').css('backgroundColor', 'grey')
+            })
+        })
+    </script>
+
+</head>
+<body>
+    <button>开灯</button>
+    <button>关灯</button>
+    <img width="500px" style="display: block; margin: 0px auto; position: relative; " src="image/timg.jpeg" alt="">
+</body>
+</html>
